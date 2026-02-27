@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infoblox Cricket League 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a1628;
+      color: #e8f0fe;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a3a6b 0%, #0d2247 100%);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 3px solid #f4a621;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f4a621;
+      letter-spacing: 1px;
+    }
+
+    header nav a {
+      color: #c9d8f0;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    header nav a:hover { color: #f4a621; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(180deg, #0d2247 0%, #0a1628 100%);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #f4a621;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #94afd4;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f4a621;
+      color: #0a1628;
+      font-weight: 700;
+      padding: 8px 24px;
+      border-radius: 24px;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .cricket-icon {
+      font-size: 5rem;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      padding: 48px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #112240;
+      border: 1px solid #1e3a6e;
+      border-radius: 12px;
+      padding: 32px 28px;
+      flex: 1 1 260px;
+      max-width: 320px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(244,166,33,0.15);
+    }
+
+    .card .icon { font-size: 2.5rem; margin-bottom: 14px; }
+    .card h2 { font-size: 1.2rem; color: #f4a621; margin-bottom: 10px; }
+    .card p { font-size: 0.92rem; color: #94afd4; line-height: 1.6; }
+
+    section.schedule {
+      max-width: 900px;
+      margin: 0 auto 60px;
+      padding: 0 40px;
+    }
+
+    section.schedule h2 {
+      font-size: 1.8rem;
+      color: #f4a621;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #112240;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    thead { background: #1a3a6b; }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+      border-bottom: 1px solid #1e3a6e;
+      font-size: 0.93rem;
+    }
+
+    th { color: #f4a621; font-weight: 600; }
+    td { color: #c9d8f0; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #162d54; }
+
+    footer {
+      background: #0d2247;
+      text-align: center;
+      padding: 28px 20px;
+      border-top: 2px solid #1e3a6e;
+      color: #4a6fa8;
+      font-size: 0.88rem;
+    }
+
+    footer span { color: #f4a621; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🏏 ICL 2026</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#teams">Teams</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="cricket-icon">🏏</div>
+    <h1>Infoblox Cricket League 2026</h1>
+    <p>The premier internal cricket tournament bringing together teams from across Infoblox in a spirit of sportsmanship and fun!</p>
+    <span class="badge">Season 2026</span>
+  </section>
+
+  <div class="cards" id="about">
+    <div class="card">
+      <div class="icon">🏆</div>
+      <h2>Championship</h2>
+      <p>Compete for the coveted ICL 2026 trophy in an exciting round-robin and knockout format.</p>
+    </div>
+    <div class="card">
+      <div class="icon">👥</div>
+      <h2>Teams</h2>
+      <p>Multiple teams representing different departments and offices participating across the season.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📅</div>
+      <h2>Schedule</h2>
+      <p>Matches scheduled throughout 2026, culminating in a grand finale. Stay tuned for updates!</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h2>Stats &amp; Scores</h2>
+      <p>Live scores, player statistics, and leaderboards updated after every match.</p>
+    </div>
+  </div>
+
+  <section class="schedule" id="schedule">
+    <h2>Upcoming Matches</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Teams</th>
+          <th>Venue</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mar 15, 2026</td>
+          <td>Team Alpha vs Team Beta</td>
+          <td>Infoblox HQ Ground</td>
+          <td>Scheduled</td>
+        </tr>
+        <tr>
+          <td>Mar 22, 2026</td>
+          <td>Team Gamma vs Team Delta</td>
+          <td>Infoblox HQ Ground</td>
+          <td>Scheduled</td>
+        </tr>
+        <tr>
+          <td>Apr 5, 2026</td>
+          <td>Team Alpha vs Team Gamma</td>
+          <td>Infoblox HQ Ground</td>
+          <td>Scheduled</td>
+        </tr>
+        <tr>
+          <td>Apr 19, 2026</td>
+          <td>Team Beta vs Team Delta</td>
+          <td>Infoblox HQ Ground</td>
+          <td>Scheduled</td>
+        </tr>
+        <tr>
+          <td>May 10, 2026</td>
+          <td>Semi-Final 1</td>
+          <td>Infoblox HQ Ground</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>May 17, 2026</td>
+          <td>Semi-Final 2</td>
+          <td>Infoblox HQ Ground</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td>May 31, 2026</td>
+          <td>🏆 Grand Final</td>
+          <td>Infoblox HQ Ground</td>
+          <td>TBD</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 <span>Infoblox Cricket League</span>. All rights reserved.</p>
+    <p style="margin-top:6px;">Hosted on <a href="https://pages.github.com/" style="color:#f4a621;text-decoration:none;">GitHub Pages</a></p>
+  </footer>
+
+</body>
+</html>
