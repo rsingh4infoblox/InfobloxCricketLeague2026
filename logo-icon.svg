@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <!-- Infoblox-style logo: 4 green diamonds in a cross pattern -->
+  <g transform="translate(150, 150)">
+    <!-- Top diamond -->
+    <rect x="-38" y="-38" width="76" height="76" rx="12" fill="#2DB84B" transform="translate(0, -65) rotate(45)"/>
+    <!-- Bottom diamond -->
+    <rect x="-38" y="-38" width="76" height="76" rx="12" fill="#2DB84B" transform="translate(0, 65) rotate(45)"/>
+    <!-- Left diamond -->
+    <rect x="-38" y="-38" width="76" height="76" rx="12" fill="#2DB84B" transform="translate(-65, 0) rotate(45)"/>
+    <!-- Right diamond -->
+    <rect x="-38" y="-38" width="76" height="76" rx="12" fill="#2DB84B" transform="translate(65, 0) rotate(45)"/>
+  </g>
+</svg>
